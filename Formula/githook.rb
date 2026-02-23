@@ -5,21 +5,21 @@
 class Githook < Formula
   desc "Webhook router + worker SDK for GitHub, GitLab, Bitbucket. Route events by rules and consume via Watermill."
   homepage "https://github.com/relaymesh/githook"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/relaymesh/githook/releases/download/v0.0.7/githook_0.0.7_darwin_amd64.tar.gz"
-      sha256 "f272174f93718c375ef0466ee5c77b83f3999c121d23dbbfa03eda2643fbba08"
+      url "https://github.com/relaymesh/githook/releases/download/v0.0.8/githook_0.0.8_darwin_amd64.tar.gz"
+      sha256 "0f0f9dc04bba4c6934e465ef26a617162402b1897dbb90be69783d078e8c9790"
 
       define_method(:install) do
         bin.install "githook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/relaymesh/githook/releases/download/v0.0.7/githook_0.0.7_darwin_arm64.tar.gz"
-      sha256 "767d5ca0d022f76ee32b08db78816bd07b62e7177dbbd79d8b8468102e75b6a5"
+      url "https://github.com/relaymesh/githook/releases/download/v0.0.8/githook_0.0.8_darwin_arm64.tar.gz"
+      sha256 "9f8b3663ae9764858dcdbbb342d56c78372fe2bd837a0fb0087ae7b1ce723d22"
 
       define_method(:install) do
         bin.install "githook"
@@ -29,15 +29,15 @@ class Githook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relaymesh/githook/releases/download/v0.0.7/githook_0.0.7_linux_amd64.tar.gz"
-      sha256 "73d5dd8323421b29fcb4b2d0289f7a96811556e6198073e76421f051ed9faa89"
+      url "https://github.com/relaymesh/githook/releases/download/v0.0.8/githook_0.0.8_linux_amd64.tar.gz"
+      sha256 "e665850e26d6e1d826d2fb8707ed633f11c6f724c3f25bb0b1dfad2af316519c"
       define_method(:install) do
         bin.install "githook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relaymesh/githook/releases/download/v0.0.7/githook_0.0.7_linux_arm64.tar.gz"
-      sha256 "7fc03188922ac8b09a8d248d01bb96331a45936611496622e419ac0fabcec4fe"
+      url "https://github.com/relaymesh/githook/releases/download/v0.0.8/githook_0.0.8_linux_arm64.tar.gz"
+      sha256 "1119d62f9b497f2de64a72b6f43c799aec939f7235713a3976b601491537c5b6"
       define_method(:install) do
         bin.install "githook"
       end
