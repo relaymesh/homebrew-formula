@@ -11,7 +11,7 @@ class Githook < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/relaymesh/githook/releases/download/v0.0.6/githook_0.0.6_darwin_amd64.tar.gz"
-      sha256 "6fd39532de68e9ca560753ba594917bcf7761d8741b6d2d747bae171072bb905"
+      sha256 "d3bcecee92db3facb50b28ea90b328f7d245a7e448eb54f03b992a08106102b3"
 
       define_method(:install) do
         bin.install "githook"
@@ -19,7 +19,7 @@ class Githook < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/relaymesh/githook/releases/download/v0.0.6/githook_0.0.6_darwin_arm64.tar.gz"
-      sha256 "0f446ece636c7d91c0e0be3e118b56881364843fdc366024c226e4617c368e10"
+      sha256 "a083dfef543cad11a03e5bd9d99849d81c7f7551a7b3a650442e30cf7596cc0d"
 
       define_method(:install) do
         bin.install "githook"
@@ -30,14 +30,14 @@ class Githook < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/relaymesh/githook/releases/download/v0.0.6/githook_0.0.6_linux_amd64.tar.gz"
-      sha256 "cdc05a09955a8c5e41620c7aa0283322758be72d70ab63e4596c1de14448ea21"
+      sha256 "cd18cee41b3fc76f714e9e7cae190a221ec51fc1b06fbe4caf49f2823b757919"
       define_method(:install) do
         bin.install "githook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/relaymesh/githook/releases/download/v0.0.6/githook_0.0.6_linux_arm64.tar.gz"
-      sha256 "91388ab32b437fc3c09961b00adc0b0b8f89d9ae084abd268376a69f96dd8515"
+      sha256 "d323d79d21ce47248d210634836fc1a648c0c9e1c51d4611a63ee8f3aa4c74b1"
       define_method(:install) do
         bin.install "githook"
       end
