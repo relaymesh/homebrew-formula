@@ -5,21 +5,21 @@
 class Relaymesh < Formula
   desc "Webhook router + worker SDK for GitHub, GitLab, Bitbucket. Route events by rules and consume via Watermill."
   homepage "https://github.com/relaymesh/relaymesh"
-  version "0.0.19"
+  version "0.0.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.19/relaymesh_0.0.19_darwin_amd64.tar.gz"
-      sha256 "51e345c045a0f82fb01e564beebdabd8839f50c2bc067b1a345a1f952a0ce958"
+      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.20/relaymesh_0.0.20_darwin_amd64.tar.gz"
+      sha256 "eef04fe2301f1129373195df277c617d01abe959255bb92b82c0fc9d116f00a8"
 
       define_method(:install) do
         bin.install "relaymesh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.19/relaymesh_0.0.19_darwin_arm64.tar.gz"
-      sha256 "e243414091ab17c862ef2a07ad49b19c8e4e563378d2fa103a129901368b24d8"
+      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.20/relaymesh_0.0.20_darwin_arm64.tar.gz"
+      sha256 "d2fc8ea493625ac9c2992ac8e7cb62e5886a17a07d9e47f2ffe28d519571f92d"
 
       define_method(:install) do
         bin.install "relaymesh"
@@ -29,15 +29,15 @@ class Relaymesh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.19/relaymesh_0.0.19_linux_amd64.tar.gz"
-      sha256 "81e55e60ccb78f4571177322e7e30ac08801203bf6a3bf7342952019bb2b5439"
+      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.20/relaymesh_0.0.20_linux_amd64.tar.gz"
+      sha256 "bb720d4d8e30f692f1e3a157a4e4a44a989df7ddf94402f698116a4b3b5f510e"
       define_method(:install) do
         bin.install "relaymesh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.19/relaymesh_0.0.19_linux_arm64.tar.gz"
-      sha256 "5e323bf093a7fd5daccf8a078b2fef088bb1817ced297b731fb1acf6a2e273cd"
+      url "https://github.com/relaymesh/relaymesh/releases/download/v0.0.20/relaymesh_0.0.20_linux_arm64.tar.gz"
+      sha256 "28db6b56713e026a35d8c98f70e2a86fdb31855dcab7d7782c90c58ce06f59ce"
       define_method(:install) do
         bin.install "relaymesh"
       end
